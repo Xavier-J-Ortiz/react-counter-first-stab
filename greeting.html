@@ -18,7 +18,7 @@
     render() {
       return(
         <div>
-        <h1> Hello World! </h1>
+        <h1> Hello {this.props.name}! </h1>
         </div>
       );
     }
@@ -35,7 +35,7 @@
     }
   }
   ReactDOM.render(
-    <Greeting />, document.getElementById('app')
+    <Greeting name="Bloc Student" />, document.getElementById('app')
   );
   ReactDOM.render(
     <HopeForName />, document.getElementById('hopeforname')
